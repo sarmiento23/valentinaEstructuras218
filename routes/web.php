@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('formulario','formularioController@formulario');
+Route::post('matrizCodigos','formularioController@formulario');
+Route::get('/form', function () {
+    return view('formulario');
+});
+
